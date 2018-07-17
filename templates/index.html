@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{super()}}
+{% endblock title %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Hello!</h1>    
+    <p>The local date and time is {{ moment(current_time).format('MMMM Do YYYY, HH:mm:ss') }}</p>
+</div>
+{% endblock page_content %}
